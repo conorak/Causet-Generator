@@ -21,11 +21,11 @@ makeNoHoles = 1; %Set to 0 to disable No Holes Poset
 
 %--Specify number of causets to make--
 makesMany=1; %Set to 0 to create only one causet
-trials = 2; %Input the number of causets to make; only works if makesMany=1
+trials = 50; %Input the number of causets to make; only works if makesMany=1
 
 %--Select the cardinality of the posets--
-smallSets=800; %If you make many posets, they will all contain this number of points; only works if makesMany=1
-bigSets=900; %The larger poset will contain this number of points
+smallSets=1800; %If you make many posets, they will all contain this number of points; only works if makesMany=1
+bigSets=5000; %The larger poset will contain this number of points
 
 %--Select whether or not to coarse-grain (NB: Only supported for one poset at a time)
 coarseGrain = 1; %Set to 0 to disable coarse-graining
@@ -33,7 +33,7 @@ numCoarse = 5; %Enter the number of times you want to coarse-grain
 coarseParam = 20; %Enter the number of events to remove for each coarse-graining
 
 %--Select whether or not to use the action principle
-useAction = 1; %set to 0 to disable coarse-graining
+useAction = 0; %set to 0 to disable coarse-graining
 beta = [0.2 0.4 0.6 0.8 1 1.2 1.4]; %select thermalization temperature(s)
 %NB: selecting useAction=1 disables no holes, and makesMany
 
