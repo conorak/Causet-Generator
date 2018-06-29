@@ -8,11 +8,13 @@ Date Created: June 28, 2018
 Last Edited: June 29, 2018 
 
 
-# Summary
+## Summary
 
 This program allows you to create Feynman posets.
 Current support includes two types of three-
 degenerate posets.
+
+Script written for MatLab R2017a
 
 Features:
 - Classical Stochastic Growth model for posets with
@@ -37,7 +39,7 @@ Planned updates in the more distant future:
   properties of posets
 - More coarse-graining options
 
-# BRIEF USER GUIDE
+## BRIEF USER GUIDE
 
 The 'Main' program allows you to choose settings for the construction parameters. Current choices include:
 
@@ -91,18 +93,18 @@ numCoarse allows you to choose how many times the set will be coarse-grained.
 ----------------------------------------------------------------------------------------------------
 
 
-# HOW THE FILES ARE SAVED 
+## HOW THE FILES ARE SAVED 
 
 Regardless of the parameters chosen, the resulting folder after running the
 program will always have the following structure:
 
-1. Result_DD-MMM-YYYY
-- Holes
+- Result_DD-MMM-YYYY
+  - Holes
     - Single
     - Statistical
     - Graphics
     - Coarse-Graining
-- No Holes
+  - No Holes
     - Single
     - Statistical
     - Graphics
