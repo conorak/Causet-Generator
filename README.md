@@ -1,15 +1,15 @@
 
-#=== Causal Set Generator (Feynman Posets) A.2 ===
-=================================================
-== Author: Conor Haugrønning ====================
-== Date Created: June 28, 2018 ==================
-== Last Edited: June 29, 2018 ===================
-=================================================
+# Causal Set Generator (Feynman Posets) A.2
+
+Author: Conor Haugrønning
+
+Date Created: June 28, 2018 
+
+Last Edited: June 29, 2018 
 
 
-=================================================
-================== SUMMARY ======================
-=================================================
+# Summary
+
 This program allows you to create Feynman posets.
 Current support includes two types of three-
 degenerate posets.
@@ -36,20 +36,14 @@ Planned updates in the more distant future:
 - More user friendly way to change kinematic
   properties of posets
 - More coarse-graining options
-=================================================
-.
-.
-.
-.
-================================================
-============= BRIEF USER GUIDE =================
-================================================
+
+# BRIEF USER GUIDE
 
 The 'Main' program allows you to choose settings for the construction parameters. Current choices include:
 
 ----------------------------------------------------------------------------------------------------
 
-Type of poset:
+**Type of poset**:
 
 makeHoles
 makeNoHoles
@@ -61,7 +55,7 @@ type of poset.
 
 ----------------------------------------------------------------------------------------------------
 
-Statistical and single trials
+**Statistical and single trials**
 
 makesMany
 trials
@@ -72,7 +66,7 @@ NB! It is highly recommended to keep the number of trials below 100.
 
 ----------------------------------------------------------------------------------------------------
 
-Cardinality of posets
+**Cardinality of posets**
 
 smallSets
 bigSet
@@ -84,7 +78,7 @@ NB: It is highly recommended to keep smallSets below 2000 and bigSets below 5000
 
 ----------------------------------------------------------------------------------------------------
 
-Coarse-Graining
+**Coarse-Graining**
 
 coarseGrain
 numCoarse
@@ -96,24 +90,23 @@ numCoarse allows you to choose how many times the set will be coarse-grained.
 
 ----------------------------------------------------------------------------------------------------
 
-============================================================================
-======================== HOW THE FILES ARE SAVED ===========================
-============================================================================
+
+# HOW THE FILES ARE SAVED 
 
 Regardless of the parameters chosen, the resulting folder after running the
 program will always have the following structure:
 
-Result_DD-MMM-YYYY
---> Holes
---> --> Single
---> --> Statistical
---> --> Graphics
---> --> Coarse-Graining
---> No Holes
---> --> Single
---> --> Statistical
---> --> Graphics
---> --> Coarse-Graining
+1. Result_DD-MMM-YYYY
+- Holes
+    - Single
+    - Statistical
+    - Graphics
+    - Coarse-Graining
+- No Holes
+    - Single
+    - Statistical
+    - Graphics
+    - Coarse-Graining
 
 The 'single' folder will always contain results. This is where you will find
 the adjacency matrix, incidence matrix, average length of subintervals, average ordering
@@ -135,4 +128,3 @@ and strong d-rigidity and the adjacency matrices for each coarse-grained version
 posets. If one is lucky, it will also contain the incidence matrices, 'sample' data,
 and the total ordering fraction of each coarse-grained version of the sets.  If not,
 it will be available in the next update.
-==============================================================================
